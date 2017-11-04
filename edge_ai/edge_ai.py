@@ -10,9 +10,9 @@ class EdgeAI:
 
     self.api = Api(self.app_secret)
 
-  def predict(self, features={}):
+  def predict(self, features=None):
     payload = {
-      'features': features,
+      'features': features or {},
       'app_token': self.app_token
     }
 
