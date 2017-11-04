@@ -1,0 +1,12 @@
+venv/
+*.pyc
+*.log
+data/
+.env
+.idea/
+tmp/
+*.pem
+bin/
+dist/
+build/
+edge_ai.egg-info/
