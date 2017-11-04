@@ -25,8 +25,8 @@ edge_ai_client = EdgeAI(
 
 If not provided upon client instantiation, `app_token` and `app_secret` will be set to the following environment variables, respectively:
 ```
-EDGEAI_TOKEN
-EDGEAI_SECRET
+EDGE_AI_TOKEN
+EDGE_AI_SECRET
 ```
 
 **Fetching Predictions**

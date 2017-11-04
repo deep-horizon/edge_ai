@@ -7,7 +7,7 @@ class Api:
 
   def __init__(self, app_secret=None):
     self.app_secret = app_secret
-    base_url = os.environ.get('EDGEAI_URL') or 'https://www.edgeai.io'
+    base_url = os.environ.get('EDGE_AI_URL') or 'https://www.edgeai.io'
 
     if base_url.endswith('/'):
       base_url = base_url[:-1]
@@ -30,7 +30,7 @@ class Api:
     if not self.app_secret:
       raise StandardError('EdgeAI client not fully configured. Make sure app_token and app_secret '
                           'are BOTH provided during client instantiation or as environment variables '
-                          'EDGEAI_TOKEN and EDGEAI_SECRET, respectively.')
+                          'EDGE_AI_TOKEN and EDGE_AI_SECRET, respectively.')
 
     func = getattr(requests, method)
 
